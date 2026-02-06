@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Feed Detox",
+  "version": "1.0",
+  "description": "Hides Instagram Reels and YouTube Shorts",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.instagram.com/*",
+        "*://www.youtube.com/*"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}
